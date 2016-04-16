@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B4F9AF51C9F18960005696C /* AddMedicineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4F9AF41C9F18960005696C /* AddMedicineViewController.swift */; };
+		0B4F9AF71C9F8A5D0005696C /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4F9AF61C9F8A5D0005696C /* CalendarViewController.swift */; };
+		0B4F9AF91CA104EE0005696C /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4F9AF81CA104EE0005696C /* UIViewExtensions.swift */; };
+		0B6CCA821CB1C8D600EFCA34 /* DPCalendarTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6CCA811CB1C8D600EFCA34 /* DPCalendarTestViewController.m */; };
+		0B76F1BE1CACA4E8002C4ACB /* DPCalendarTestStoryboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B76F1BD1CACA4E8002C4ACB /* DPCalendarTestStoryboardViewController.m */; };
+		0B76F1C11CACA544002C4ACB /* DPCalendarMonthlyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B76F1C01CACA544002C4ACB /* DPCalendarMonthlyView.m */; };
+		0B76F1C41CACA56E002C4ACB /* DPCalendarMonthlySingleMonthCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B76F1C31CACA56E002C4ACB /* DPCalendarMonthlySingleMonthCell.m */; };
+		0B76F1C71CACA584002C4ACB /* DPCalendarMonthlyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B76F1C61CACA584002C4ACB /* DPCalendarMonthlyCell.m */; };
+		0B76F1CA1CACA596002C4ACB /* DPCalendarEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B76F1C91CACA596002C4ACB /* DPCalendarEvent.m */; };
+		0B76F1CD1CACA5C0002C4ACB /* DPCalendarIconEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B76F1CC1CACA5C0002C4ACB /* DPCalendarIconEvent.m */; };
+		0B76F1D01CACA5CC002C4ACB /* NSDate+DP.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B76F1CF1CACA5CC002C4ACB /* NSDate+DP.m */; };
+		0B76F1D31CACA5E7002C4ACB /* DPConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B76F1D21CACA5E7002C4ACB /* DPConstants.m */; };
+		0B76F1D61CACA5F7002C4ACB /* NSString+DP.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B76F1D51CACA5F7002C4ACB /* NSString+DP.m */; };
+		0B76F1D91CACABFC002C4ACB /* DPCalendarMonthlySingleMonthViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B76F1D81CACABFC002C4ACB /* DPCalendarMonthlySingleMonthViewLayout.m */; };
+		0B76F1DC1CACAC11002C4ACB /* DPCalendarMonthlyWeekdayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B76F1DB1CACAC11002C4ACB /* DPCalendarMonthlyWeekdayCell.m */; };
+		0B90CD6A1C8CEFAD00F5D087 /* CategoryLabelTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B90CD691C8CEFAD00F5D087 /* CategoryLabelTableViewController.swift */; };
+		0BC9C1DF1CB8A52A002F02CC /* AddSpecialEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC9C1DE1CB8A52A002F02CC /* AddSpecialEventViewController.swift */; };
+		0BC9C1E11CB8A970002F02CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BC9C1E01CB8A970002F02CC /* Main.storyboard */; };
+		0BE58B1D1C7A323F008087C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE58B1C1C7A323F008087C3 /* AppDelegate.swift */; };
+		0BE58B1F1C7A323F008087C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE58B1E1C7A323F008087C3 /* ViewController.swift */; };
+		0BE58B241C7A323F008087C3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BE58B231C7A323F008087C3 /* Images.xcassets */; };
+		0BE58B271C7A323F008087C3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BE58B251C7A323F008087C3 /* LaunchScreen.xib */; };
+		0BE58B331C7A323F008087C3 /* Technovation_2016Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE58B321C7A323F008087C3 /* Technovation_2016Tests.swift */; };
+		0BE58B3D1C7A36F9008087C3 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE58B3C1C7A36F9008087C3 /* Category.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0BE58B2D1C7A323F008087C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BE58B0F1C7A323F008087C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0BE58B161C7A323F008087C3;
+			remoteInfo = "Technovation 2016";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B4F9AF41C9F18960005696C /* AddMedicineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMedicineViewController.swift; sourceTree = "<group>"; };
+		0B4F9AF61C9F8A5D0005696C /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		0B4F9AF81CA104EE0005696C /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		0B6CCA801CB1C8D600EFCA34 /* DPCalendarTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPCalendarTestViewController.h; sourceTree = "<group>"; };
+		0B6CCA811CB1C8D600EFCA34 /* DPCalendarTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPCalendarTestViewController.m; sourceTree = "<group>"; };
+		0B76F1BB1CACA4DD002C4ACB /* DPCalendarTestStoryboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DPCalendarTestStoryboardViewController.h; path = "../Technovation 2016/DPCalendarTestStoryboardViewController.h"; sourceTree = "<group>"; };
+		0B76F1BC1CACA4E7002C4ACB /* Technovation 2016-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Technovation 2016-Bridging-Header.h"; sourceTree = "<group>"; };
+		0B76F1BD1CACA4E8002C4ACB /* DPCalendarTestStoryboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPCalendarTestStoryboardViewController.m; path = "../Technovation 2016/DPCalendarTestStoryboardViewController.m"; sourceTree = "<group>"; };
+		0B76F1BF1CACA53D002C4ACB /* DPCalendarMonthlyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DPCalendarMonthlyView.h; path = "../Technovation 2016/DPCalendarMonthlyView.h"; sourceTree = "<group>"; };
+		0B76F1C01CACA544002C4ACB /* DPCalendarMonthlyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPCalendarMonthlyView.m; path = "../Technovation 2016/DPCalendarMonthlyView.m"; sourceTree = "<group>"; };
+		0B76F1C21CACA56E002C4ACB /* DPCalendarMonthlySingleMonthCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPCalendarMonthlySingleMonthCell.h; path = "../Technovation 2016/DPCalendarMonthlySingleMonthCell.h"; sourceTree = "<group>"; };
+		0B76F1C31CACA56E002C4ACB /* DPCalendarMonthlySingleMonthCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPCalendarMonthlySingleMonthCell.m; path = "../Technovation 2016/DPCalendarMonthlySingleMonthCell.m"; sourceTree = "<group>"; };
+		0B76F1C51CACA584002C4ACB /* DPCalendarMonthlyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPCalendarMonthlyCell.h; path = "../Technovation 2016/DPCalendarMonthlyCell.h"; sourceTree = "<group>"; };
+		0B76F1C61CACA584002C4ACB /* DPCalendarMonthlyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPCalendarMonthlyCell.m; path = "../Technovation 2016/DPCalendarMonthlyCell.m"; sourceTree = "<group>"; };
+		0B76F1C81CACA596002C4ACB /* DPCalendarEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPCalendarEvent.h; path = "../Technovation 2016/DPCalendarEvent.h"; sourceTree = "<group>"; };
+		0B76F1C91CACA596002C4ACB /* DPCalendarEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPCalendarEvent.m; path = "../Technovation 2016/DPCalendarEvent.m"; sourceTree = "<group>"; };
+		0B76F1CB1CACA5C0002C4ACB /* DPCalendarIconEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPCalendarIconEvent.h; path = "../Technovation 2016/DPCalendarIconEvent.h"; sourceTree = "<group>"; };
+		0B76F1CC1CACA5C0002C4ACB /* DPCalendarIconEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPCalendarIconEvent.m; path = "../Technovation 2016/DPCalendarIconEvent.m"; sourceTree = "<group>"; };
+		0B76F1CE1CACA5CC002C4ACB /* NSDate+DP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+DP.h"; path = "../Technovation 2016/NSDate+DP.h"; sourceTree = "<group>"; };
+		0B76F1CF1CACA5CC002C4ACB /* NSDate+DP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+DP.m"; path = "../Technovation 2016/NSDate+DP.m"; sourceTree = "<group>"; };
+		0B76F1D11CACA5E7002C4ACB /* DPConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPConstants.h; path = "../Technovation 2016/DPConstants.h"; sourceTree = "<group>"; };
+		0B76F1D21CACA5E7002C4ACB /* DPConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPConstants.m; path = "../Technovation 2016/DPConstants.m"; sourceTree = "<group>"; };
+		0B76F1D41CACA5F7002C4ACB /* NSString+DP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+DP.h"; path = "../Technovation 2016/NSString+DP.h"; sourceTree = "<group>"; };
+		0B76F1D51CACA5F7002C4ACB /* NSString+DP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+DP.m"; path = "../Technovation 2016/NSString+DP.m"; sourceTree = "<group>"; };
+		0B76F1D71CACABFC002C4ACB /* DPCalendarMonthlySingleMonthViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPCalendarMonthlySingleMonthViewLayout.h; path = "../Technovation 2016/DPCalendarMonthlySingleMonthViewLayout.h"; sourceTree = "<group>"; };
+		0B76F1D81CACABFC002C4ACB /* DPCalendarMonthlySingleMonthViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPCalendarMonthlySingleMonthViewLayout.m; path = "../Technovation 2016/DPCalendarMonthlySingleMonthViewLayout.m"; sourceTree = "<group>"; };
+		0B76F1DA1CACAC11002C4ACB /* DPCalendarMonthlyWeekdayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPCalendarMonthlyWeekdayCell.h; path = "../Technovation 2016/DPCalendarMonthlyWeekdayCell.h"; sourceTree = "<group>"; };
+		0B76F1DB1CACAC11002C4ACB /* DPCalendarMonthlyWeekdayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPCalendarMonthlyWeekdayCell.m; path = "../Technovation 2016/DPCalendarMonthlyWeekdayCell.m"; sourceTree = "<group>"; };
+		0B90CD691C8CEFAD00F5D087 /* CategoryLabelTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryLabelTableViewController.swift; sourceTree = "<group>"; };
+		0BC9C1DE1CB8A52A002F02CC /* AddSpecialEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSpecialEventViewController.swift; sourceTree = "<group>"; };
+		0BC9C1E01CB8A970002F02CC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		0BE58B171C7A323F008087C3 /* Technovation 2016.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Technovation 2016.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BE58B1B1C7A323F008087C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BE58B1C1C7A323F008087C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0BE58B1E1C7A323F008087C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0BE58B231C7A323F008087C3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0BE58B261C7A323F008087C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		0BE58B2C1C7A323F008087C3 /* Technovation 2016Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Technovation 2016Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BE58B311C7A323F008087C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BE58B321C7A323F008087C3 /* Technovation_2016Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Technovation_2016Tests.swift; sourceTree = "<group>"; };
+		0BE58B3C1C7A36F9008087C3 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0BE58B141C7A323F008087C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BE58B291C7A323F008087C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B76F20E1CACB4D9002C4ACB /* DPCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				0B76F1BB1CACA4DD002C4ACB /* DPCalendarTestStoryboardViewController.h */,
+				0B76F1BD1CACA4E8002C4ACB /* DPCalendarTestStoryboardViewController.m */,
+				0B76F1BF1CACA53D002C4ACB /* DPCalendarMonthlyView.h */,
+				0B76F1C01CACA544002C4ACB /* DPCalendarMonthlyView.m */,
+				0B76F1C21CACA56E002C4ACB /* DPCalendarMonthlySingleMonthCell.h */,
+				0B76F1C31CACA56E002C4ACB /* DPCalendarMonthlySingleMonthCell.m */,
+				0B76F1C51CACA584002C4ACB /* DPCalendarMonthlyCell.h */,
+				0B76F1C61CACA584002C4ACB /* DPCalendarMonthlyCell.m */,
+				0B76F1C81CACA596002C4ACB /* DPCalendarEvent.h */,
+				0B76F1C91CACA596002C4ACB /* DPCalendarEvent.m */,
+				0B76F1CB1CACA5C0002C4ACB /* DPCalendarIconEvent.h */,
+				0B76F1CC1CACA5C0002C4ACB /* DPCalendarIconEvent.m */,
+				0B76F1DA1CACAC11002C4ACB /* DPCalendarMonthlyWeekdayCell.h */,
+				0B76F1DB1CACAC11002C4ACB /* DPCalendarMonthlyWeekdayCell.m */,
+				0B76F1CE1CACA5CC002C4ACB /* NSDate+DP.h */,
+				0B76F1CF1CACA5CC002C4ACB /* NSDate+DP.m */,
+				0B76F1D11CACA5E7002C4ACB /* DPConstants.h */,
+				0B76F1D21CACA5E7002C4ACB /* DPConstants.m */,
+				0B76F1D41CACA5F7002C4ACB /* NSString+DP.h */,
+				0B76F1D51CACA5F7002C4ACB /* NSString+DP.m */,
+				0B76F1D71CACABFC002C4ACB /* DPCalendarMonthlySingleMonthViewLayout.h */,
+				0B76F1D81CACABFC002C4ACB /* DPCalendarMonthlySingleMonthViewLayout.m */,
+				0B6CCA801CB1C8D600EFCA34 /* DPCalendarTestViewController.h */,
+				0B6CCA811CB1C8D600EFCA34 /* DPCalendarTestViewController.m */,
+			);
+			name = DPCalendar;
+			path = "Technovation 2016.xcodeproj";
+			sourceTree = "<group>";
+		};
+		0BE58B0E1C7A323F008087C3 = {
+			isa = PBXGroup;
+			children = (
+				0B76F20E1CACB4D9002C4ACB /* DPCalendar */,
+				0BE58B191C7A323F008087C3 /* Technovation 2016 */,
+				0BE58B2F1C7A323F008087C3 /* Technovation 2016Tests */,
+				0BE58B181C7A323F008087C3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0BE58B181C7A323F008087C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0BE58B171C7A323F008087C3 /* Technovation 2016.app */,
+				0BE58B2C1C7A323F008087C3 /* Technovation 2016Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0BE58B191C7A323F008087C3 /* Technovation 2016 */ = {
+			isa = PBXGroup;
+			children = (
+				0BE58B1C1C7A323F008087C3 /* AppDelegate.swift */,
+				0BE58B1E1C7A323F008087C3 /* ViewController.swift */,
+				0B4F9AF61C9F8A5D0005696C /* CalendarViewController.swift */,
+				0BC9C1E01CB8A970002F02CC /* Main.storyboard */,
+				0B4F9AF81CA104EE0005696C /* UIViewExtensions.swift */,
+				0B4F9AF41C9F18960005696C /* AddMedicineViewController.swift */,
+				0BC9C1DE1CB8A52A002F02CC /* AddSpecialEventViewController.swift */,
+				0B90CD691C8CEFAD00F5D087 /* CategoryLabelTableViewController.swift */,
+				0BE58B3C1C7A36F9008087C3 /* Category.swift */,
+				0BE58B231C7A323F008087C3 /* Images.xcassets */,
+				0BE58B251C7A323F008087C3 /* LaunchScreen.xib */,
+				0BE58B1A1C7A323F008087C3 /* Supporting Files */,
+				0B76F1BC1CACA4E7002C4ACB /* Technovation 2016-Bridging-Header.h */,
+			);
+			path = "Technovation 2016";
+			sourceTree = "<group>";
+		};
+		0BE58B1A1C7A323F008087C3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0BE58B1B1C7A323F008087C3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0BE58B2F1C7A323F008087C3 /* Technovation 2016Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0BE58B321C7A323F008087C3 /* Technovation_2016Tests.swift */,
+				0BE58B301C7A323F008087C3 /* Supporting Files */,
+			);
+			path = "Technovation 2016Tests";
+			sourceTree = "<group>";
+		};
+		0BE58B301C7A323F008087C3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0BE58B311C7A323F008087C3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0BE58B161C7A323F008087C3 /* Technovation 2016 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BE58B361C7A323F008087C3 /* Build configuration list for PBXNativeTarget "Technovation 2016" */;
+			buildPhases = (
+				0BE58B131C7A323F008087C3 /* Sources */,
+				0BE58B141C7A323F008087C3 /* Frameworks */,
+				0BE58B151C7A323F008087C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Technovation 2016";
+			productName = "Technovation 2016";
+			productReference = 0BE58B171C7A323F008087C3 /* Technovation 2016.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0BE58B2B1C7A323F008087C3 /* Technovation 2016Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BE58B391C7A323F008087C3 /* Build configuration list for PBXNativeTarget "Technovation 2016Tests" */;
+			buildPhases = (
+				0BE58B281C7A323F008087C3 /* Sources */,
+				0BE58B291C7A323F008087C3 /* Frameworks */,
+				0BE58B2A1C7A323F008087C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0BE58B2E1C7A323F008087C3 /* PBXTargetDependency */,
+			);
+			name = "Technovation 2016Tests";
+			productName = "Technovation 2016Tests";
+			productReference = 0BE58B2C1C7A323F008087C3 /* Technovation 2016Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0BE58B0F1C7A323F008087C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Ahsoka Tano";
+				TargetAttributes = {
+					0BE58B161C7A323F008087C3 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					0BE58B2B1C7A323F008087C3 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 0BE58B161C7A323F008087C3;
+					};
+				};
+			};
+			buildConfigurationList = 0BE58B121C7A323F008087C3 /* Build configuration list for PBXProject "Technovation 2016" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0BE58B0E1C7A323F008087C3;
+			productRefGroup = 0BE58B181C7A323F008087C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0BE58B161C7A323F008087C3 /* Technovation 2016 */,
+				0BE58B2B1C7A323F008087C3 /* Technovation 2016Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0BE58B151C7A323F008087C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BC9C1E11CB8A970002F02CC /* Main.storyboard in Resources */,
+				0BE58B271C7A323F008087C3 /* LaunchScreen.xib in Resources */,
+				0BE58B241C7A323F008087C3 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BE58B2A1C7A323F008087C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0BE58B131C7A323F008087C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B76F1BE1CACA4E8002C4ACB /* DPCalendarTestStoryboardViewController.m in Sources */,
+				0B76F1C71CACA584002C4ACB /* DPCalendarMonthlyCell.m in Sources */,
+				0B76F1C41CACA56E002C4ACB /* DPCalendarMonthlySingleMonthCell.m in Sources */,
+				0B76F1D91CACABFC002C4ACB /* DPCalendarMonthlySingleMonthViewLayout.m in Sources */,
+				0B76F1D31CACA5E7002C4ACB /* DPConstants.m in Sources */,
+				0B76F1C11CACA544002C4ACB /* DPCalendarMonthlyView.m in Sources */,
+				0B76F1CD1CACA5C0002C4ACB /* DPCalendarIconEvent.m in Sources */,
+				0B76F1DC1CACAC11002C4ACB /* DPCalendarMonthlyWeekdayCell.m in Sources */,
+				0B4F9AF71C9F8A5D0005696C /* CalendarViewController.swift in Sources */,
+				0BC9C1DF1CB8A52A002F02CC /* AddSpecialEventViewController.swift in Sources */,
+				0B4F9AF91CA104EE0005696C /* UIViewExtensions.swift in Sources */,
+				0B6CCA821CB1C8D600EFCA34 /* DPCalendarTestViewController.m in Sources */,
+				0BE58B1F1C7A323F008087C3 /* ViewController.swift in Sources */,
+				0B76F1D61CACA5F7002C4ACB /* NSString+DP.m in Sources */,
+				0B76F1D01CACA5CC002C4ACB /* NSDate+DP.m in Sources */,
+				0B76F1CA1CACA596002C4ACB /* DPCalendarEvent.m in Sources */,
+				0BE58B1D1C7A323F008087C3 /* AppDelegate.swift in Sources */,
+				0BE58B3D1C7A36F9008087C3 /* Category.swift in Sources */,
+				0B4F9AF51C9F18960005696C /* AddMedicineViewController.swift in Sources */,
+				0B90CD6A1C8CEFAD00F5D087 /* CategoryLabelTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BE58B281C7A323F008087C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BE58B331C7A323F008087C3 /* Technovation_2016Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0BE58B2E1C7A323F008087C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0BE58B161C7A323F008087C3 /* Technovation 2016 */;
+			targetProxy = 0BE58B2D1C7A323F008087C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0BE58B251C7A323F008087C3 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0BE58B261C7A323F008087C3 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0BE58B341C7A323F008087C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0BE58B351C7A323F008087C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0BE58B371C7A323F008087C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				INFOPLIST_FILE = "Technovation 2016/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AhsokaTano.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Technovation 2016/Technovation 2016-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0BE58B381C7A323F008087C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				INFOPLIST_FILE = "Technovation 2016/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AhsokaTano.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Technovation 2016/Technovation 2016-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0BE58B3A1C7A323F008087C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Technovation 2016Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AhsokaTano.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Technovation 2016.app/Technovation 2016";
+			};
+			name = Debug;
+		};
+		0BE58B3B1C7A323F008087C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Technovation 2016Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AhsokaTano.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Technovation 2016.app/Technovation 2016";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0BE58B121C7A323F008087C3 /* Build configuration list for PBXProject "Technovation 2016" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BE58B341C7A323F008087C3 /* Debug */,
+				0BE58B351C7A323F008087C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0BE58B361C7A323F008087C3 /* Build configuration list for PBXNativeTarget "Technovation 2016" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BE58B371C7A323F008087C3 /* Debug */,
+				0BE58B381C7A323F008087C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0BE58B391C7A323F008087C3 /* Build configuration list for PBXNativeTarget "Technovation 2016Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BE58B3A1C7A323F008087C3 /* Debug */,
+				0BE58B3B1C7A323F008087C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0BE58B0F1C7A323F008087C3 /* Project object */;
+}
