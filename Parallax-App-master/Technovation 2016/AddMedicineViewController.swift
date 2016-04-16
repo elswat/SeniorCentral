@@ -59,6 +59,8 @@ public class AddMedicineViewController: UIViewController, UIPickerViewDataSource
         self.pickerView.dataSource = self
         
         // Do any additional setup after loading the view.
+        //address.frame = CGRectMake(address.frame.origin.x + 10.0, address.frame.origin.y, address.frame.size.width, address.frame.size.width)
+        oftenText.frame.size.width = 40.0
     }
 
     override public func didReceiveMemoryWarning() {

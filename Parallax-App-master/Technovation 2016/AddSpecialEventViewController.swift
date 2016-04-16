@@ -29,7 +29,7 @@ class AddSpecialEventViewController: UIViewController, UIPickerViewDelegate, UIP
     
     @IBAction func addSpecialEvent(sender: AnyObject) {
         objectD!.events = NSMutableArray()
-        var event: DPCalendarEvent = DPCalendarEvent(title: eventNameText.text, startTime: dateAndTimeDatePicker.date, endTime: dateAndTimeDatePicker.date, colorIndex: 1)
+        let event: DPCalendarEvent = DPCalendarEvent(title: eventNameText.text, startTime: dateAndTimeDatePicker.date, endTime: dateAndTimeDatePicker.date, colorIndex: 1)
         objectD!.events.addObject(event)
     }
     
@@ -58,6 +58,7 @@ class AddSpecialEventViewController: UIViewController, UIPickerViewDelegate, UIP
         self.pickerView.dataSource = self;
         self.pickerView.delegate = self;
         // Do any additional setup after loading the view.
+        allDaySwitch.setOn(false, animated: true)
         
     }
     
