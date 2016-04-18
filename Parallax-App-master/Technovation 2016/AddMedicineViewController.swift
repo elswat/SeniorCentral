@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class AddMedicineViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+public class AddMedicineViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UIApplicationDelegate {
 
     @IBOutlet weak var nameText: UITextField!
     @IBOutlet weak var pickerView: UIPickerView!
@@ -22,19 +22,17 @@ public class AddMedicineViewController: UIViewController, UIPickerViewDataSource
     
     @IBOutlet weak var endDatePicker: UIDatePicker!
     let pickerData = ["Hours", "Days", "Weeks", "Months"]
-    var i = 0
-    
+    //var i = 0
+    var events = NSMutableArray()
     //var objectC = DPCalendarTestStoryboardViewController()
-    var objectC =  UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("CalendarID") as? DPCalendarTestStoryboardViewController
+    //var objectC =  UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("CalendarID") as? DPCalendarTestStoryboardViewController
     
     @IBAction func addMedicine(sender: AnyObject) {
-        objectC!.events = NSMutableArray()
+        //objectC!.events = NSMutableArray()
         let event: DPCalendarEvent = DPCalendarEvent(title: nameText.text, startTime: startDatePicker.date, endTime: startDatePicker.date, colorIndex: 1)
-        objectC!.events.addObject(event)
-        NSLog("Title: %@", objectC!.events[i].title)
-        i += 1
-        
-        
+        events.addObject(event)
+        //NSLog("Title: %@", events[i].title)
+        //i += 1
     }
     
     func printMedicineInfo() {
@@ -61,6 +59,10 @@ public class AddMedicineViewController: UIViewController, UIPickerViewDataSource
         // Do any additional setup after loading the view.
         //address.frame = CGRectMake(address.frame.origin.x + 10.0, address.frame.origin.y, address.frame.size.width, address.frame.size.width)
         oftenText.frame.size.width = 40.0
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        self.events = appDelegate.events
+        //var events: [DPCalendarEvent] = appDelegate.events
+
     }
 
     override public func didReceiveMemoryWarning() {

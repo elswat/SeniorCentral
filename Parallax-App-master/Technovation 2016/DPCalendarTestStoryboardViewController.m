@@ -14,19 +14,16 @@
 #import <UIKit/UIKit.h>
 #import "DPCalendarTestViewController.h"
 #import "DPCalendarMonthlySingleMonthViewLayout.h"
-//#import "Technovation 2016-Swift.h"
-
+#import "Technovation_2016-Swift.h"
 
 #define IDIOM    UI_USER_INTERFACE_IDIOM()
 #define IPAD     UIUserInterfaceIdiomPad
 
-
-
 @interface DPCalendarTestStoryboardViewController ()<DPCalendarMonthlyViewDelegate, UICollectionViewDataSource, UICollectionViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *gtitle;
-@property (weak, nonatomic) IBOutlet DPCalendarMonthlyView *calendarMonthlyView;
-//@property (nonatomic, strong) NSMutableArray *events;
+//@property (weak, nonatomic) IBOutlet DPCalendarMonthlyView *calendarMonthlyView;
+@property (nonatomic, strong) NSMutableArray *events;
 @property (nonatomic, strong) NSMutableArray *iconEvents;
 @property (weak, nonatomic) IBOutlet UICollectionView *titleCollectionView;
 
@@ -43,7 +40,7 @@
 @property (nonatomic, strong) DPCalendarMonthlyView *monthlyView;
 
 
-@property (nonatomic, strong) NSArray *titles;
+@property (nonatomic, strong) NSArray *weektitles;
 @end
 
 
@@ -131,7 +128,11 @@ int i=0;
     self.monthlyView = [[DPCalendarMonthlyView alloc] initWithFrame:CGRectMake(0, 100, width, height - 50) delegate:self];
     [self.view addSubview:self.monthlyView];
     
-    [self.monthlyView setEvents:_events complete:nil];
+    AppDelegate *myAppDelegate = [[UIApplication sharedApplication] delegate];
+    self.events = myAppDelegate.events;
+
+    [self.monthlyView setEvents: myAppDelegate.events complete:nil];
+    
     [self.monthlyView setIconEvents:self.iconEvents complete:nil];
 }
 
@@ -208,7 +209,7 @@ int i=0;
 }
 
 -(void)didSelectItemWithDate:(NSDate *)date {
-    NSLog(@"Select date %@ with \n events %@ \n and icon events %@", date, [self.calendarMonthlyView eventsForDay:date], [self.calendarMonthlyView iconEventsForDay:date]);
+    //NSLog(@"Select date %@ with \n events %@ \n and icon events %@", date, [self.calendarMonthlyView eventsForDay:date], [self.calendarMonthlyView iconEventsForDay:date]);
     NSLog(@"Select date %@ with \n events %@ \n and icon events %@", date, [self.monthlyView eventsForDay:date], [self.monthlyView iconEventsForDay:date]);
     
 }
@@ -253,10 +254,12 @@ int i=0;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    AppDelegate *myAppDelegate = [[UIApplication sharedApplication] delegate];
+    self.events = myAppDelegate.events;
     self.titleCollectionView.backgroundColor = [UIColor whiteColor];
     self.titleCollectionView.delegate = self;
     self.titleCollectionView.dataSource = self;
-    self.titles = @[@"Sun", @"Mon", @"Tue",@"Wed",@"Thu",@"Fri",@"Sat"];
+    self.weektitles = @[@"Sun", @"Mon", @"Tue",@"Wed",@"Thu",@"Fri",@"Sat"];
     
     UICollectionViewFlowLayout *layout = [UICollectionViewFlowLayout new];
     layout.scrollDirection = UICollectionViewScrollDirectionVertical;
@@ -267,16 +270,16 @@ int i=0;
     layout.footerReferenceSize = CGSizeZero;
     self.titleCollectionView.collectionViewLayout = layout;
     
-    self.calendarMonthlyView.monthlyViewDelegate = self;
+    //self.calendarMonthlyView.monthlyViewDelegate = self;
     
     [self generateData];
     [self commonInit];
-    //NSLog(@"Title: %@", ((DPCalendarEvent*)_events[i]).title);
+    //NSLog(@"Title: %@", ((DPCalendarEvent*)_events[0]).title);
     
-    [self.calendarMonthlyView setEvents: _events complete:nil];
-    [self.calendarMonthlyView setIconEvents:self.iconEvents complete:nil];
+    //[self.calendarMonthlyView setEvents: myAppDelegate.events complete:nil];
+    //[self.calendarMonthlyView setIconEvents:self.iconEvents complete:nil];
     
-	[self updateLabelWithMonth:self.calendarMonthlyView.seletedMonth];
+	//[self updateLabelWithMonth:self.calendarMonthlyView.seletedMonth];
     [self updateLabelWithMonth:self.monthlyView.seletedMonth];
 
 }
@@ -298,14 +301,14 @@ int i=0;
     //UIImage *icon = [UIImage imageNamed:@"IconPubHol"];
     //UIImage *greyIcon = [UIImage imageNamed:@"IconDateGrey"];
     
-    NSArray *titles = @[@"Medicine", @"Special Event", @"Exercise", @"Sleeping"];
+    //NSArray *titles = @[@"Medicine", @"Special Event", @"Exercise", @"Sleeping"];
     
     for (int i = 0; i < 60; i++) {
-        if (arc4random() % 2 > 0) {
+        /*if (arc4random() % 2 > 0) {
             int index = arc4random() % 2;
             DPCalendarEvent *event = [[DPCalendarEvent alloc] initWithTitle:[titles objectAtIndex:index] startTime:date endTime:[date dateByAddingYears:0 months:0 days:arc4random() % 3] colorIndex:index];
             [_events addObject:event];
-        }
+        }*/
         
         /*if (arc4random() % 2 > 0) {
             DPCalendarIconEvent *iconEvent = [[DPCalendarIconEvent alloc] initWithStartTime:date endTime:[date dateByAddingYears:0 months:0 days:0] icon:icon];
@@ -354,19 +357,19 @@ int i=0;
 #pragma mark - Rotation
 
 -(void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
-    [self.calendarMonthlyView resetViews];
+    //[self.calendarMonthlyView resetViews];
     [self.titleCollectionView reloadData];
     [self commonInit];
 }
 
 -(BOOL)shouldAutomaticallyForwardAppearanceMethods{
-    [self.calendarMonthlyView resetViews];
+    //[self.calendarMonthlyView resetViews];
     return YES;
 }
 
 - (void)orientationChanged:(NSNotification *)notification
 {
-    [self.calendarMonthlyView resetViews];
+    //[self.calendarMonthlyView resetViews];
 }
 
 #pragma mark - UICollectionViewDataSource
@@ -381,7 +384,7 @@ int i=0;
     UILabel *label = (UILabel *)[cell viewWithTag:1];
     CGSize size = [self collectionView:collectionView layout:collectionView.collectionViewLayout sizeForItemAtIndexPath:indexPath];
     label.frame = CGRectMake(0, 0, size.width, size.height);
-    label.text = [self.titles objectAtIndex:indexPath.row];
+    label.text = [self.weektitles objectAtIndex:indexPath.row];
     return cell;
 }
 
@@ -389,7 +392,7 @@ int i=0;
 - (CGSize)collectionView:(UICollectionView *)collectionView
                   layout:(UICollectionViewLayout*)collectionViewLayout
   sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    CGFloat itemWidth  = floorf(self.titleCollectionView.bounds.size.width / self.titles.count);
+    CGFloat itemWidth  = floorf(self.titleCollectionView.bounds.size.width / self.weektitles.count);
     CGFloat itemHeight = roundf(self.titleCollectionView.bounds.size.height);
     
     return CGSizeMake(itemWidth, itemHeight);

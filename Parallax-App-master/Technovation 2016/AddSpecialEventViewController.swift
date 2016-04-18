@@ -20,6 +20,7 @@ class AddSpecialEventViewController: UIViewController, UIPickerViewDelegate, UIP
     @IBOutlet weak var dateAndTimeDatePicker: UIDatePicker!
     
     let pickerData = ["Hours", "Days", "Weeks", "Months"]
+    var events = NSMutableArray()
     
     func printSpecialEventInfo() {
         
@@ -28,9 +29,9 @@ class AddSpecialEventViewController: UIViewController, UIPickerViewDelegate, UIP
     var objectD =  UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("CalendarID") as? DPCalendarTestStoryboardViewController
     
     @IBAction func addSpecialEvent(sender: AnyObject) {
-        objectD!.events = NSMutableArray()
+        //objectD!.events = NSMutableArray()
         let event: DPCalendarEvent = DPCalendarEvent(title: eventNameText.text, startTime: dateAndTimeDatePicker.date, endTime: dateAndTimeDatePicker.date, colorIndex: 1)
-        objectD!.events.addObject(event)
+        events.addObject(event)
     }
     
     func allDay() {
@@ -38,6 +39,7 @@ class AddSpecialEventViewController: UIViewController, UIPickerViewDelegate, UIP
             dateAndTimeDatePicker.datePickerMode = UIDatePickerMode.Date
         }
         //Reload dateAndTimeDatePicker
+        dateAndTimeDatePicker.reloadInputViews()
     }
     
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
@@ -59,7 +61,8 @@ class AddSpecialEventViewController: UIViewController, UIPickerViewDelegate, UIP
         self.pickerView.delegate = self;
         // Do any additional setup after loading the view.
         allDaySwitch.setOn(false, animated: true)
-        
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        self.events = appDelegate.events
     }
     
     override func didReceiveMemoryWarning() {

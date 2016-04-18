@@ -798,7 +798,6 @@ static NSInteger const DPCalendarMonthlyViewAttributeStartDayOfWeekDefault = 0; 
             return [obj1.startTime compare: obj2.startTime];
         }];
         if (events.count) {
-            
             /*****************************************************************
              *
              * Step2:

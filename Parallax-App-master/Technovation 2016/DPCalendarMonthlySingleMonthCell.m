@@ -17,7 +17,7 @@
 @property (nonatomic, strong) NSDate *date;
 @property (nonatomic, strong) NSCalendar *calendar;
 
-@property (nonatomic, strong) NSArray *events1;
+@property (nonatomic, strong) NSArray *events;
 @property (nonatomic, strong) NSArray *iconEvents;
 
 @end
@@ -43,7 +43,7 @@
 
 -(void)setDate:(NSDate *)date calendar:(NSCalendar *)calendar events:(NSArray *)events iconEvents:(NSArray *)iconEvents {
     self.date = [calendar dateFromComponents:[calendar components:(NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay) fromDate:date]];
-    self.events1 = events;
+    self.events = events;
     self.iconEvents = iconEvents;
     self.calendar = calendar;
 
@@ -68,7 +68,7 @@
 -(void) didTapCell:(UITapGestureRecognizer *)gesutreRecognizer {
     CGPoint point = [gesutreRecognizer locationInView:self];
     NSDate *day = self.date;
-    for (DPCalendarEvent *event in self.events1) {
+    for (DPCalendarEvent *event in self.events) {
         if (event.rowIndex == 0) {
             continue;
         }
@@ -198,7 +198,7 @@
     }
     
     //Draw Events
-    for (DPCalendarEvent *event in self.events1) {
+    for (DPCalendarEvent *event in self.events) {
         
         NSDate *day = self.date;
         

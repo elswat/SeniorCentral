@@ -31,6 +31,7 @@
 		0BE58B271C7A323F008087C3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BE58B251C7A323F008087C3 /* LaunchScreen.xib */; };
 		0BE58B331C7A323F008087C3 /* Technovation_2016Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE58B321C7A323F008087C3 /* Technovation_2016Tests.swift */; };
 		0BE58B3D1C7A36F9008087C3 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE58B3C1C7A36F9008087C3 /* Category.swift */; };
+		0BE6C4641CC4A5D9009DFA03 /* AddExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE6C4631CC4A5D9009DFA03 /* AddExerciseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		0BE58B311C7A323F008087C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BE58B321C7A323F008087C3 /* Technovation_2016Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Technovation_2016Tests.swift; sourceTree = "<group>"; };
 		0BE58B3C1C7A36F9008087C3 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		0BE6C4631CC4A5D9009DFA03 /* AddExerciseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddExerciseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 				0B4F9AF81CA104EE0005696C /* UIViewExtensions.swift */,
 				0B4F9AF41C9F18960005696C /* AddMedicineViewController.swift */,
 				0BC9C1DE1CB8A52A002F02CC /* AddSpecialEventViewController.swift */,
+				0BE6C4631CC4A5D9009DFA03 /* AddExerciseViewController.swift */,
 				0B90CD691C8CEFAD00F5D087 /* CategoryLabelTableViewController.swift */,
 				0BE58B3C1C7A36F9008087C3 /* Category.swift */,
 				0BE58B231C7A323F008087C3 /* Images.xcassets */,
@@ -305,6 +308,7 @@
 				0B76F1BE1CACA4E8002C4ACB /* DPCalendarTestStoryboardViewController.m in Sources */,
 				0B76F1C71CACA584002C4ACB /* DPCalendarMonthlyCell.m in Sources */,
 				0B76F1C41CACA56E002C4ACB /* DPCalendarMonthlySingleMonthCell.m in Sources */,
+				0BE6C4641CC4A5D9009DFA03 /* AddExerciseViewController.swift in Sources */,
 				0B76F1D91CACABFC002C4ACB /* DPCalendarMonthlySingleMonthViewLayout.m in Sources */,
 				0B76F1D31CACA5E7002C4ACB /* DPConstants.m in Sources */,
 				0B76F1C11CACA544002C4ACB /* DPCalendarMonthlyView.m in Sources */,
@@ -373,7 +377,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
+				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -419,7 +423,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
+				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_NS_ASSERTIONS = NO;

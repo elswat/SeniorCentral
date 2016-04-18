@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface DPCalendarTestStoryboardViewController : UIViewController
-@property (nonatomic, strong) NSMutableArray *events;
+//@property (nonatomic, strong) NSMutableArray *events;
 
 @end
