@@ -1,28 +1,29 @@
 //
-//  AddExerciseViewController.swift
+//  AddAppointmentViewController.swift
 //  Technovation 2016
 //
-//  Created by Ahsoka Tano on 4/17/16.
+//  Created by Ahsoka Tano on 4/18/16.
 //  Copyright © 2016 Ahsoka Tano. All rights reserved.
 //
 
 import UIKit
 
-class AddExerciseViewController: UIViewController, UIPickerViewDataSource, UIApplicationDelegate, UIPickerViewDelegate {
+class AddAppointmentViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UIApplicationDelegate {
     
-    @IBOutlet weak var exerciseTypeText: UITextField!
-    @IBOutlet weak var exerciseDateAndTime: UIDatePicker!
-    @IBOutlet weak var exerciseLocationText: UITextField!
-    @IBOutlet weak var exerciseReminder: UISwitch!
-    @IBOutlet weak var exerciseOftenText: UITextField!
-    @IBOutlet weak var exercisePickerView: UIPickerView!
-    @IBOutlet weak var exerciseEndRepeat: UIDatePicker!
+    @IBOutlet weak var appointmentTypeText: UITextField!
+    @IBOutlet weak var appointmentDateAndTime: UIDatePicker!
+    @IBOutlet weak var appointmentLocationText: UITextField!
+    @IBOutlet weak var appointmentReminderSwitch: UISwitch!
+    @IBOutlet weak var repeatOftenText: UITextField!
+    
+    @IBOutlet weak var appointmentEndRepeatDate: UIDatePicker!
+    @IBOutlet weak var appointmentPickerView: UIPickerView!
     
     let pickerData = ["Hours", "Days", "Weeks", "Months"]
     var events = NSMutableArray()
     
-    @IBAction func addExercise(sender: AnyObject) {
-        let event: DPCalendarEvent = DPCalendarEvent(title: exerciseTypeText.text, startTime: exerciseDateAndTime.date, endTime: exerciseDateAndTime.date, colorIndex: 1)
+    @IBAction func addAppointment(sender: AnyObject) {
+        let event: DPCalendarEvent = DPCalendarEvent(title: appointmentTypeText.text, startTime: appointmentDateAndTime.date, endTime: appointmentDateAndTime.date, colorIndex: 1)
         events.addObject(event)
 
     }
@@ -41,20 +42,20 @@ class AddExerciseViewController: UIViewController, UIPickerViewDataSource, UIApp
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.exercisePickerView.delegate = self
-        self.exercisePickerView.dataSource = self
+        self.appointmentPickerView.delegate = self
+        self.appointmentPickerView.dataSource = self
         
         // Do any additional setup after loading the view.
-        
+    
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         self.events = appDelegate.events
         
-        
     }
     
-    override  func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
 
 }

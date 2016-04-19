@@ -32,6 +32,7 @@
 		0BE58B331C7A323F008087C3 /* Technovation_2016Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE58B321C7A323F008087C3 /* Technovation_2016Tests.swift */; };
 		0BE58B3D1C7A36F9008087C3 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE58B3C1C7A36F9008087C3 /* Category.swift */; };
 		0BE6C4641CC4A5D9009DFA03 /* AddExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE6C4631CC4A5D9009DFA03 /* AddExerciseViewController.swift */; };
+		0BE6C4661CC5D98D009DFA03 /* AddAppointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE6C4651CC5D98D009DFA03 /* AddAppointmentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		0BE58B321C7A323F008087C3 /* Technovation_2016Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Technovation_2016Tests.swift; sourceTree = "<group>"; };
 		0BE58B3C1C7A36F9008087C3 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		0BE6C4631CC4A5D9009DFA03 /* AddExerciseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddExerciseViewController.swift; sourceTree = "<group>"; };
+		0BE6C4651CC5D98D009DFA03 /* AddAppointmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAppointmentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 				0B4F9AF41C9F18960005696C /* AddMedicineViewController.swift */,
 				0BC9C1DE1CB8A52A002F02CC /* AddSpecialEventViewController.swift */,
 				0BE6C4631CC4A5D9009DFA03 /* AddExerciseViewController.swift */,
+				0BE6C4651CC5D98D009DFA03 /* AddAppointmentViewController.swift */,
 				0B90CD691C8CEFAD00F5D087 /* CategoryLabelTableViewController.swift */,
 				0BE58B3C1C7A36F9008087C3 /* Category.swift */,
 				0BE58B231C7A323F008087C3 /* Images.xcassets */,
@@ -325,6 +328,7 @@
 				0BE58B1D1C7A323F008087C3 /* AppDelegate.swift in Sources */,
 				0BE58B3D1C7A36F9008087C3 /* Category.swift in Sources */,
 				0B4F9AF51C9F18960005696C /* AddMedicineViewController.swift in Sources */,
+				0BE6C4661CC5D98D009DFA03 /* AddAppointmentViewController.swift in Sources */,
 				0B90CD6A1C8CEFAD00F5D087 /* CategoryLabelTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
