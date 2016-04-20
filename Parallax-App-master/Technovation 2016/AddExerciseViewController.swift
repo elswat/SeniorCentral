@@ -27,6 +27,10 @@ class AddExerciseViewController: UIViewController, UIPickerViewDataSource, UIApp
 
     }
     
+    @IBAction func exerciseForeverButton(sender: AnyObject) {
+        exerciseEndRepeat.hidden = true
+    }
+    
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return 1
     }

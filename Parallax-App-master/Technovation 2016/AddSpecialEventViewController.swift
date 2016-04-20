@@ -34,7 +34,11 @@ class AddSpecialEventViewController: UIViewController, UIPickerViewDelegate, UIP
         events.addObject(event)
     }
     
-    func allDay() {
+    @IBAction func specialEventForeverButton(sender: AnyObject) {
+        endOfRepeatDatePicker.hidden = true
+    }
+    
+    @IBAction func allDay(sender: AnyObject) {
         if allDaySwitch.on {
             dateAndTimeDatePicker.datePickerMode = UIDatePickerMode.Date
         }

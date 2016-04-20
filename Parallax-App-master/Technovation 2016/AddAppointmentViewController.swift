@@ -28,6 +28,11 @@ class AddAppointmentViewController: UIViewController, UIPickerViewDelegate, UIPi
 
     }
     
+    @IBAction func appointmentForeverButton(sender: AnyObject) {
+        appointmentEndRepeatDate.hidden = true
+    }
+    
+    
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return 1
     }

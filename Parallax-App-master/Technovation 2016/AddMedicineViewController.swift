@@ -35,6 +35,10 @@ public class AddMedicineViewController: UIViewController, UIPickerViewDataSource
         //i += 1
     }
     
+    @IBAction func medicineForeverButton(sender: AnyObject) {
+        endDatePicker.hidden = true
+    }
+    
     func printMedicineInfo() {
         
     }
