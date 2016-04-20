@@ -24,7 +24,13 @@ class AddExerciseViewController: UIViewController, UIPickerViewDataSource, UIApp
     @IBAction func addExercise(sender: AnyObject) {
         let event: DPCalendarEvent = DPCalendarEvent(title: exerciseTypeText.text, startTime: exerciseDateAndTime.date, endTime: exerciseDateAndTime.date, colorIndex: 1)
         events.addObject(event)
-
+        if exerciseReminder.on {
+            let notification = UILocalNotification()
+            notification.alertBody = exerciseTypeText.text // text that will be displayed in the notification
+            notification.fireDate = exerciseDateAndTime.date // todo item due date (when notification will be fired)
+            notification.soundName = UILocalNotificationDefaultSoundName // play default sound
+            UIApplication.sharedApplication().scheduleLocalNotification(notification)
+        }
     }
     
     @IBAction func exerciseForeverButton(sender: AnyObject) {

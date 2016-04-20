@@ -31,8 +31,13 @@ public class AddMedicineViewController: UIViewController, UIPickerViewDataSource
         //objectC!.events = NSMutableArray()
         let event: DPCalendarEvent = DPCalendarEvent(title: nameText.text, startTime: startDatePicker.date, endTime: startDatePicker.date, colorIndex: 1)
         events.addObject(event)
-        //NSLog("Title: %@", events[i].title)
-        //i += 1
+        if reminderSwitch.on {
+            let notification = UILocalNotification()
+            notification.alertBody = nameText.text // text that will be displayed in the notification
+            notification.fireDate = startDatePicker.date // todo item due date (when notification will be fired)
+            notification.soundName = UILocalNotificationDefaultSoundName // play default sound
+            UIApplication.sharedApplication().scheduleLocalNotification(notification)
+        }
     }
     
     @IBAction func medicineForeverButton(sender: AnyObject) {

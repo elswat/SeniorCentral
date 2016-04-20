@@ -25,7 +25,13 @@ class AddAppointmentViewController: UIViewController, UIPickerViewDelegate, UIPi
     @IBAction func addAppointment(sender: AnyObject) {
         let event: DPCalendarEvent = DPCalendarEvent(title: appointmentTypeText.text, startTime: appointmentDateAndTime.date, endTime: appointmentDateAndTime.date, colorIndex: 1)
         events.addObject(event)
-
+        if appointmentReminderSwitch.on {
+            let notification = UILocalNotification()
+            notification.alertBody = appointmentTypeText.text // text that will be displayed in the notification
+            notification.fireDate = appointmentDateAndTime.date // todo item due date (when notification will be fired)
+            notification.soundName = UILocalNotificationDefaultSoundName // play default sound
+            UIApplication.sharedApplication().scheduleLocalNotification(notification)
+        }
     }
     
     @IBAction func appointmentForeverButton(sender: AnyObject) {

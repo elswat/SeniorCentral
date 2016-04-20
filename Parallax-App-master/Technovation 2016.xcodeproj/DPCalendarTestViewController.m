@@ -249,9 +249,9 @@
              DPCalendarMonthlyViewAttributeCellRowHeight: @23,
                           DPCalendarMonthlyViewAttributeEventDrawingStyle: [NSNumber numberWithInt:DPCalendarMonthlyViewEventDrawingStyleUnderline],
              DPCalendarMonthlyViewAttributeStartDayOfWeek: @0,
-             DPCalendarMonthlyViewAttributeWeekdayFont: [UIFont systemFontOfSize:18],
-             DPCalendarMonthlyViewAttributeDayFont: [UIFont systemFontOfSize:14],
-             DPCalendarMonthlyViewAttributeEventFont: [UIFont systemFontOfSize:14],
+             DPCalendarMonthlyViewAttributeWeekdayFont: [UIFont systemFontOfSize:20],
+             DPCalendarMonthlyViewAttributeDayFont: [UIFont systemFontOfSize:20],
+             DPCalendarMonthlyViewAttributeEventFont: [UIFont systemFontOfSize:20],
              DPCalendarMonthlyViewAttributeMonthRows:@5,
              DPCalendarMonthlyViewAttributeIconEventBkgColors: @[[UIColor clearColor], [UIColor colorWithRed:239/255.f green:239/255.f blue:244/255.f alpha:1]]
              };

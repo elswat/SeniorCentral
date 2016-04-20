@@ -32,6 +32,13 @@ class AddSpecialEventViewController: UIViewController, UIPickerViewDelegate, UIP
         //objectD!.events = NSMutableArray()
         let event: DPCalendarEvent = DPCalendarEvent(title: eventNameText.text, startTime: dateAndTimeDatePicker.date, endTime: dateAndTimeDatePicker.date, colorIndex: 1)
         events.addObject(event)
+        if reminderSwitch.on {
+            let notification = UILocalNotification()
+            notification.alertBody = eventNameText.text // text that will be displayed in the notification
+            notification.fireDate = dateAndTimeDatePicker.date // todo item due date (when notification will be fired)
+            notification.soundName = UILocalNotificationDefaultSoundName // play default sound
+            UIApplication.sharedApplication().scheduleLocalNotification(notification)
+        }
     }
     
     @IBAction func specialEventForeverButton(sender: AnyObject) {
