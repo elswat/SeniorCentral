@@ -23,6 +23,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *gtitle;
 //@property (weak, nonatomic) IBOutlet DPCalendarMonthlyView *calendarMonthlyView;
+//@property (weak, nonatomic) IBOutlet UILabel *label;
 @property (nonatomic, strong) NSMutableArray *events;
 @property (nonatomic, strong) NSMutableArray *iconEvents;
 @property (weak, nonatomic) IBOutlet UICollectionView *titleCollectionView;
@@ -260,6 +261,7 @@ int i=0;
     self.titleCollectionView.delegate = self;
     self.titleCollectionView.dataSource = self;
     self.weektitles = @[@"Sun", @"Mon", @"Tue",@"Wed",@"Thu",@"Fri",@"Sat"];
+    [self.titleCollectionView reloadData];
     
     UICollectionViewFlowLayout *layout = [UICollectionViewFlowLayout new];
     layout.scrollDirection = UICollectionViewScrollDirectionVertical;
@@ -382,9 +384,11 @@ int i=0;
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CalendarTitleCellIdentifier forIndexPath:indexPath];
     UILabel *label = (UILabel *)[cell viewWithTag:1];
+    label = [[UILabel alloc] init];
     CGSize size = [self collectionView:collectionView layout:collectionView.collectionViewLayout sizeForItemAtIndexPath:indexPath];
     label.frame = CGRectMake(0, 0, size.width, size.height);
-    label.text = [self.weektitles objectAtIndex:indexPath.row];
+    NSString *title = [[NSString alloc] initWithFormat:@"%@", self.weektitles[indexPath.row]];
+    label.text = title;
     return cell;
 }
 
